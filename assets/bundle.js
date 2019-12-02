@@ -2,32 +2,35 @@
 /* global $ */
 var grid = require('hex-grid')
 
-$.getJSON('assets/data.json', function (data) {
-  var shuffled = shuffle(data)
-  $.each(shuffled, function (key, val) {
-    var img = $('<img />', {
-      'class': 'hex',
-      'src': val.raster,
-      'alt': val.description,
-    })
+$(document).ready(function() {
+	$.getJSON('assets/data.json', function (data) {
+	  var shuffled = shuffle(data)
+	  $.each(shuffled, function (key, val) {
+		var img = $('<img />', {
+		  'class': 'hex',
+		  'src': val.raster,
+		  'alt': val.description,
+		})
 
-    $('<a />', {
-      'href': "http://hexb.in/" + val.filename,
-      'target': '_blank'
-    }).append(img).appendTo('#grid')
-  })
+		$('<a />', {
+		  'href': "http://hexb.in/" + val.filename,
+		  'target': '_blank'
+		}).append(img).appendTo('#grid')
+	  })
 
-  var hexes = document.querySelectorAll('.hex')
-  var root = document.querySelector('#grid')
+	  var hexes = document.querySelectorAll('.hex')
+	  var root = document.querySelector('#grid')
 
-  function scan () {
-    grid({ element: root, spacing: 4 }, hexes)
-  }
+	  function scan () {
+		var res = grid({ element: root, spacing: 4 }, hexes);
+		console.log(res);
+	  }
 
-  scan()
-  window.addEventListener('resize', scan)
-  window.addEventListener('load', scan)
-})
+	  scan()
+	  window.addEventListener('resize', scan)
+	  window.addEventListener('load', scan)
+	})
+});
 
 function shuffle (array) {
   var currentIndex = array.length
