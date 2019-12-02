@@ -1,9 +1,0 @@
-{
-  "name": "rOpenSCi",
-  "author": "Karthik Ram",
-  "license": "CC0",
-  "vector": "http://hexb.in/vector/ropensci.svg",
-  "description": "The rOpenSci project. http://ropensci.org",
-  "raster": "http://hexb.in/hexagons/ropensci.png",
-  "filename": "meta/ropensci.json"
-}
