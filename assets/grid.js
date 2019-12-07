@@ -8,6 +8,8 @@ $.getJSON('assets/data.json', function (data) {
       'class': 'hex',
       'src': val.raster,
       'alt': val.description,
+      'width': '181px',
+      'height': '209px'
     })
 
     $('<a />', {
