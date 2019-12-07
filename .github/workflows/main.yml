@@ -1,0 +1,19 @@
+name: Redeploy wiki
+on:
+  push:
+    branches:
+      - master
+  repository_dispatch:
+
+jobs:
+  create-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: octokit/request-action@v2.x
+        id: create_check_run
+        with:
+          route: POST /repos/:repositorydispatches
+          repository: HHEU/wiki
+          event_type: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
