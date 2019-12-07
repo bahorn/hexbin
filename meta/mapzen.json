@@ -1,9 +1,0 @@
-{
-  "name": "mapzen",
-  "author": "mapzen",
-  "license": "MIT",
-  "vector": "http://hexb.in/vector/mapzen.svg",
-  "description": "an open source mapping lab · mapzen.com",
-  "raster": "http://hexb.in/hexagons/mapzen.png",
-  "filename": "meta/mapzen.json"
-}

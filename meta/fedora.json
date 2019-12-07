@@ -1,8 +1,0 @@
-{
-  "name": "fedora",
-  "author": "Fedora Design Team",
-  "license": "https://fedoraproject.org/Logo/UsageGuidelines",
-  "raster": "http://hexb.in/hexagons/fedora.png",
-  "vector": "http://hexb.in/vector/fedora.svg",
-  "description": "https://getfedora.org"
-}
