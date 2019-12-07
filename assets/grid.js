@@ -11,7 +11,7 @@ $.getJSON('assets/data.json', function (data) {
     })
 
     $('<a />', {
-      'href': "http://hexb.in/" + val.filename,
+      'href': "http://hack.athon.uk/docs/art/hexbin" + val.filename,
       'target': '_blank'
     }).append(img).appendTo('#grid')
   })
