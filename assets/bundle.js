@@ -9,10 +9,12 @@ $.getJSON('assets/data.json', function (data) {
       'class': 'hex',
       'src': val.raster,
       'alt': val.description,
+      'width': '181px',
+      'height': '209px'
     })
 
     $('<a />', {
-      'href': "http://hack.athon.uk/docs/art/hexbin" + val.raster,
+      'href': "http://hack.athon.uk/docs/art/hexbin" + val.filename,
       'target': '_blank'
     }).append(img).appendTo('#grid')
   })
@@ -148,6 +150,7 @@ function dims (opts) {
     else if (typeof window !== 'undefined' && window.getComputedStyle) {
         s = window.getComputedStyle(opts);
     }
+    console.log(s.width, s.height)
     return {
         width: parseInt(s.width),
         height: parseInt(s.height)
