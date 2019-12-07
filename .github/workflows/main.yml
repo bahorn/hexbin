@@ -12,7 +12,7 @@ jobs:
       - uses: octokit/request-action@v2.x
         id: create_check_run
         with:
-          route: POST /repos/:repositorydispatches
+          route: POST /repos/:repository/dispatches
           repository: HHEU/wiki
           event_type: Deploy
         env:
