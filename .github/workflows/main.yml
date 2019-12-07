@@ -15,5 +15,7 @@ jobs:
           route: POST /repos/:repository/dispatches
           repository: HHEU/wiki
           event_type: Deploy
+          mediaType: '{"previews": ["everest"]}'
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
