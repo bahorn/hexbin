@@ -2,7 +2,7 @@ name: Redeploy wiki
 on:
   push:
     branches:
-      - master
+      - gh-pages
   repository_dispatch:
 
 jobs:
