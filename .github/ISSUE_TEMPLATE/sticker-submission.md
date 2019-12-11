@@ -2,7 +2,7 @@
 name: Sticker Submission
 about: Submitting new stickers to the site
 title: ''
-labels: ''
+labels: submission
 assignees: ''
 
 ---
@@ -20,3 +20,5 @@ assignees: ''
 ## Year
 
 ## Tags
+
+## Any notes?
