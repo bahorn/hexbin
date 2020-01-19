@@ -1,5 +1,7 @@
 # HHEU Hexagon Sticker Archive
 
+An archive for the Hackathon Hexagons from the EU Hackathon Scene.
+
 ## submit a hexagon
 
 - First, make sure you're the owner of the hexagon you are submitting!
