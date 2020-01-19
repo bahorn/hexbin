@@ -30,9 +30,12 @@ Tools are available in several programming languages to help automate sticker cr
 
 # for maintainers
 
+You no longer need to do this!
+
+<del>
 After merging PRs/adding new hexes you have to build the site:
 
 - `npm run build`
 - add + commit
 - `git push origin gh-pages`
-
+</del>
