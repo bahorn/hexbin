@@ -1,3 +1,4 @@
+# HHEU Hexagon Sticker Archive
 
 ## submit a hexagon
 
@@ -29,8 +30,6 @@ Tools are available in several programming languages to help automate sticker cr
 - [hexSticker](https://github.com/GuangchuangYu/hexSticker) uses R
 
 # for maintainers
-
-You no longer need to do this!
 
 <del>
 After merging PRs/adding new hexes you have to build the site:
